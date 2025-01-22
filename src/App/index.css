@@ -39,7 +39,7 @@ header{
    height: 70px; 
    width:100% ;
    position: absolute;
-   margin: auto;
+   margin-left: auto;
    border-bottom-left-radius: 15px;
    border-bottom-right-radius: 15px;
 
@@ -138,7 +138,7 @@ header ul li{
 
 footer{
    
-    padding:1.5rem 8rem;
+    padding:1rem 8rem;
     gap: 3rem;
     color: #3D3D3D;
     display: flex;
@@ -154,32 +154,47 @@ footer{
     filter: drop-shadow(0px 0px 5px #555);
 }
 
-
-@media (min-width:800px) {
-    /* header{
-        width: 83.333333%;
-        left:50%;
-        transform: translate(-50%);
-    } */
-    header{
-        padding:2rem 4rem;
-    }
-    header ul{
-        gap: 3rem;
-    }
+@media (min-width:300px) {
+  header{
+     padding:1rem 1rem;
+ }
+ /* .hide{
+    display:none;
+ }
+ .show{
+     display:block;
+ } */
+}
+@media (min-width:650px) {
+  /* header{
+      width: 83.333333%;
+      left:50%;
+      transform: translate(-50%);
+  } */
+  header{
+      padding:2rem 2rem;
+  }
+  header ul{
+      gap: 3rem;
+  }
+}
+@media (min-width:1000px) {
+  /* header{
+      width: 83.333333%;
+      left:50%;
+      transform: translate(-50%);
+  } */
+  header{
+      padding:2rem 4rem;
+  }
+  header ul{
+      gap: 3rem;
+  }
 }
 
-@media (max-width:400px) {
-     header{
-        padding:1rem 0.5rem;
-    }
-    /* .hide{
-       display:none;
-    }
-    .show{
-        display:block;
-    } */
-}
+
+
+
 
 
 @keyframes slideInLeft {

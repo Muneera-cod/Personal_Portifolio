@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
    <>
-      <div className=' flex sm:flex-col-reverse md:flex-row w-5/6 m-auto min-h-[92vh] py-[3rem] gap-[36px]'>
-        <div className='basis-1/2  flex flex-col bg-red-300  sm:items-center  md:items-start  justify-center gap-[44px] sm:py-4 md:p-8  xl:p-14'>
-             <div className='flex flex-col gap-[8px] '>
+      <div className=' flex sm:flex-col-reverse md:flex-row w-5/6 m-auto min-h-[92vh] pt-[4rem] gap-[36px]'>
+        <div className='basis-1/2  flex flex-col bg-red-300  sm:items-center  md:items-start  justify-center  gap-[44px] sm:py-4 md:py-8 xl:py-20 md:px-8  xl:px-12'>
+             <div className='flex flex-col gap-[8px] sm:items-center  md:items-start'>
                 <h1 className='sm:text-[30px] md:text-[38px] lg:text-[44px] text-[#3D3D3D] leading-[72px] font-[700] typing-container'>Hi, I'm Muneera</h1>
                 <p className='sm:text-[20px] text-[24px] text-[#3D3D3D] leading-[32px] text-justify font-[400] tracking-widest font-[400]'>Software Developer</p>
              </div>
