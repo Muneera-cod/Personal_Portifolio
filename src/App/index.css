@@ -31,7 +31,7 @@ h1{
 header{
    z-index: 10;
     /* border: 0.01px solid rgb(49, 48, 48); */
-    padding:3rem 4rem ;
+    padding:2rem 4rem ;
     color: #3D3D3D;
     display: flex;
     justify-content: end;
@@ -143,7 +143,7 @@ footer{
     color: #3D3D3D;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width:100% ;
    
@@ -162,7 +162,7 @@ footer{
         transform: translate(-50%);
     } */
     header{
-        padding:3rem 4rem;
+        padding:2rem 4rem;
     }
     header ul{
         gap: 3rem;
@@ -171,7 +171,7 @@ footer{
 
 @media (max-width:400px) {
      header{
-        padding:2rem;
+        padding:1rem 2rem;
     }
     /* .hide{
        display:none;

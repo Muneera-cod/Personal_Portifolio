@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div className='min-h-screen min-w-full homebg'>
-    <div className='absolute left-0 right-0 top-0'>
       <div className=' flex sm:flex-col-reverse lg:flex-row w-5/6 m-auto py-[3rem] min-h-screen gap-[36px]'>
         <div className='basis-1/2  flex flex-col  justify-center gap-[44px] sm:py-4 md:p-8  xl:p-14'>
              <div className='flex flex-col gap-[8px] '>
@@ -21,7 +20,7 @@ function Home() {
        
       
     </div>
-</div> 
+
 <Footer/></div>
   )
 }
