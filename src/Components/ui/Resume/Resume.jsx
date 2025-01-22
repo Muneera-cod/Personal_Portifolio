@@ -3,7 +3,7 @@ import styles from  "./Resume.module.css"
 import { projectData } from './ProjectsData'
 function Resume() {
   return (
-    <div className={`  text-[#3D3D3D]  pt-[120px] sm:pb-[30px] md:pb-[60px] sm:px-[30px] md:px-[60px] ${styles.gridforresume}`}>
+    <div className={`max-h-[100%]  relative overflow-hidden text-[#3D3D3D]  pt-[120px] sm:pb-[30px] md:pb-[60px] sm:px-[30px] md:px-[60px] ${styles.gridforresume}`}>
       <div className={`p-[40px] flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-left ${styles.skills}`}>
         <div className=' relative h-fit w-fit'>
           

@@ -240,5 +240,6 @@ footer{
   
   .slide-in-bottom {
     animation: slideInBottom 1s ease-out forwards;
+    overflow: hidden;
   }
   
