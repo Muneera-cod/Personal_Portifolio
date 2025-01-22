@@ -10,10 +10,24 @@ function Navbar({setView}) {
             <li className=' font-[700] text-[20px]' onClick={()=>{navigate('aboutme');setView(1)}}>About me</li> */}
 
 
-          <NavLink to={'/'} ><li className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : "" } >Home</li></NavLink>
-          <NavLink to={'aboutme'}><li className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : "" } >About me</li></NavLink>
-
-          <NavLink to={'resume'}><li className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : "" } >Resume</li></NavLink>
+<NavLink to={'/'}>
+    {({ isActive, isPending }) => {
+      const className = isPending ? "pending" : isActive ? "active" : "";
+      return <li className={className}>Home</li>;
+    }}
+  </NavLink>
+  <NavLink to={'aboutme'}>
+    {({ isActive, isPending }) => {
+      const className = isPending ? "pending" : isActive ? "active" : "";
+      return <li className={className}>About me</li>;
+    }}
+  </NavLink>
+  <NavLink to={'resume'}>
+    {({ isActive, isPending }) => {
+      const className = isPending ? "pending" : isActive ? "active" : "";
+      return <li className={className}>Resume</li>;
+    }}
+  </NavLink>
             
         </ul>
         {/* <div className='flex gap-[3rem] items-center'>
