@@ -1,9 +1,15 @@
 import React from 'react'
-
+import { DotLoader } from 'react-spinners'
 function Loading() {
   return (
     <div className='min-h-screen min-w-full flex items-center justify-center'>
-        <p className='text-[34px]'>Loading</p>
+         <DotLoader
+         color='#578E7E'
+        
+        size={60}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
     </div>
   )
 }

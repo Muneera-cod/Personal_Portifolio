@@ -10,7 +10,7 @@ import typeScripticon from '../../../assets/Images/icons8-typescript.svg'
 import reduxicon from '../../../assets/Images/icons8-redux.svg'
 function Aboutme() {
   return (
-    <div className='flex  min-h-screen sm:flex-col md:flex-row items-center   w-full   sm:px-[14px] md:px-[20px] lg:px-[28px] xl:px-[45px] pt-[100px] pb-10'>
+    <div className='flex  min-h-screen relative overflow-hidden sm:flex-col md:flex-row items-center   w-full   sm:px-[14px] md:px-[20px] lg:px-[28px] xl:px-[45px] pt-[100px] pb-10'>
       
       <div className='basis-1/2 flex   items-center justify-center'>
            
@@ -18,7 +18,7 @@ function Aboutme() {
               <img src={photo}  className='w-full h-full object-cover '></img>
           </div>
       </div> 
-        <div className='basis-1/2 flex   justify-end  flex-col  bg-red-300 gap-4  md:p-6 slide-in-right'>
+        <div className='basis-1/2 flex   justify-start  flex-col  bg-red-300 gap-4  md:p-6 slide-in-right'>
         <p className='text-hoverNavClr text-[24px] font-[700]'>Hi,everyone...</p>
                 <ul className='sm:text-[14px] md:text-[16px] text-[#3D3D3D] font-[700]  sm:text-center md:text-left  leading-[28px]'>
                 <li>I’m a software developer specializing in building responsive, user-friendly interfaces with React.js.</li>
