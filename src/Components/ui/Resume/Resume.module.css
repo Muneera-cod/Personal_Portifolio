@@ -1,0 +1,35 @@
+.gridforresume{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "skills about about"
+                          "skills experience experience"
+                          "projects projects projects";
+    gap: 1rem;
+}
+.skills{
+    grid-area: skills;
+}
+.about{
+    grid-area: about;
+}
+.experience{
+    grid-area: experience;
+}
+.projects{
+  grid-area: projects;
+}
+/* @media (min-width:800px) {
+   
+} */
+
+@media (max-width:600px) {
+    .gridforresume{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "about about about"
+                              "skills skills skills"
+                              "experience experience experience"
+                              "projects projects projects";
+        gap: 1rem;
+    }
+}
