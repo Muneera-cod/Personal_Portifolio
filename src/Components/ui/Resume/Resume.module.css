@@ -5,6 +5,7 @@
                           "skills experience experience"
                           "projects projects projects";
     gap: 1rem;
+    margin: auto;
 }
 .skills{
     grid-area: skills;

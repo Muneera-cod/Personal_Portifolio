@@ -1,13 +1,16 @@
 import React from 'react'
 import styles from  "./Resume.module.css"
 import { projectData } from './ProjectsData'
+import { useDispatch } from 'react-redux'
+import { hideSmNav } from '../../../redux/Slice/Nav/ShowSlice'
 function Resume() {
+  const dispatch = useDispatch()
   return (
-    <div className={`max-h-[100%]  relative overflow-hidden text-[#3D3D3D]  pt-[120px] sm:pb-[30px] md:pb-[60px] sm:px-[30px] md:px-[60px] ${styles.gridforresume}`}>
-      <div className={`p-[40px] flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-left ${styles.skills}`}>
+    <section onClick={()=>dispatch(hideSmNav())} className={`max-h-[100%]  relative overflow-hidden text-[#3D3D3D]  pt-[120px] sm:pb-[30px] md:pb-[60px] sm:px-[20px] md:px-[30px] lg:px-[40px] ${styles.gridforresume}`}>
+      <div className={`sm:p-[20px] md:p-[30px] lg:p-[40px] shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-left ${styles.skills}`}>
         <div className=' relative h-fit w-fit'>
           
-          <p className='text-[26px] font-[700]  headline tracking-wide'>Skills</p>
+          <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase  headline tracking-wide'>Skills</p>
         
         </div>
           <div className='flex flex-col gap-[0.5rem] sm:text-[15px] md:text-[17px]'>
@@ -17,10 +20,10 @@ function Resume() {
                   <p>Responive Design</p>
           </div>
         </div>
-        <div className={`p-[36px] flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right ${styles.about}`}>
+        <div className={`sm:p-[20px] md:p-[30px]  lg:p-[36px] shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right ${styles.about}`}>
         <div className=' relative h-fit w-fit'>
           
-          <p className='sm:text-[18px] md:text-[25px] font-[700]  headline tracking-wide'>Software Developer - Frontend Specialist</p>
+          <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase headline tracking-wide'>Software Developer</p>
           
         </div>
         <div className='max-w-[600px] text-justify'> <p className='sm:text-[15px] md:text-[17px] '>Passionate about crafting engaging and responsive user interfaces. Proficient in HTML, CSS, JavaScript, React.js, and 
@@ -28,10 +31,10 @@ responsive design principles. Seeking to join an innovative team to leverage my 
 development, enhancing user experiences across devices. </p></div>
         </div>
 
-        <div className={`p-[40px] flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right  ${styles.experience}`}>
+        <div className={`sm:p-[25px] md:p-[30px] lg:p-[40px] shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right  ${styles.experience}`}>
         <div className=' relative h-fit w-fit'>
           
-          <p className='text-[26px] font-[700] headline tracking-wide'>Experience</p>
+          <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase  headline tracking-wide'>Experience</p>
           
         </div>
         <div className=' flex sm:flex-col md:flex-row text-justify sm:text-[15px] md:text-[17px]'>
@@ -39,26 +42,35 @@ development, enhancing user experiences across devices. </p></div>
         </div>
         </div>
 
-        <div className={`p-[40px] flex flex-col gap-[1.5rem] bg-[rgb(3,111,113,0.1)] slide-in-bottom  ${styles.projects}`}>
+        <div className={`sm:p-[20px] md:p-[30px] lg:p-[40px] shadow-md flex flex-col gap-[1.5rem] bg-[rgb(3,111,113,0.1)] slide-in-bottom  ${styles.projects}`}>
         <div className=' relative h-fit w-fit'>
           
-          <p className='text-[26px] font-[700]  headline tracking-wide'>Project</p>
+          <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase  headline tracking-wide'>Projects</p>
           
         </div>
-        {projectData.map((project)=><div  key={project.id} className='flex flex-col gap-2 sm:text-[15px] md:text-[17px]'>
+        {projectData.map((project)=><div  key={project.id} className='border-b-[0.5px] pb-2 border-textColor border-opacity-20 flex flex-col gap-2 sm:text-[15px] md:text-[17px]'>
           <div className='flex justify-between items-center '>
             <p className='font-[700] tracking-widest'>{project.title}</p>
               <p className='opacity-60'>{project.date}</p>
           </div>
           <div>
-          <p className='text-justify'>{project.description}</p>
+          <p className='text-justify uppercase font-[200]  opacity-80 my-1'>TECHSTACK : {project.description.techstack}</p>
+
+          <p className='text-justify'>{project.description.topDescription}</p>
+          <ul className='sm:pl-8 lg:pl-12 py-3'>
+            <li className='sm:-ml-8 lg:-ml-12'>Key Features</li>
+            {project.description.keyFeatures.map((feature)=><li className='list-disc'>{feature}</li>)}
+          </ul>
+          <p className='text-justify'>{project.description.lastDesription}</p>
+
+          <button className='my-3 font-[900] px-5  py-1 bg-hoverNavClr bg-opacity-10 rounded-md'>Preview</button>
           </div>
            
         </div>)}
         </div>
 
 
-    </div>
+    </section>
   )
 }
 

@@ -1,9 +1,13 @@
 import React from 'react'
 import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { hideSmNav } from '../../../redux/Slice/Nav/ShowSlice'
 function Home() {
+  const dispatch = useDispatch()
   return (
-   <div className='h-[calc(100vh-60px)] flex flex-col'>
+   <>
+   <section onClick={()=>dispatch(hideSmNav())} className='h-[calc(100vh-60px)] flex flex-col'>
       <div className=' flex sm:flex-col-reverse flex-1 md:flex-row w-5/6 m-auto md:pt-[4rem] gap-[36px]'>
         <div className='basis-1/2  flex flex-col bg-red-300  sm:items-center  md:items-start  justify-center  gap-[44px] sm:py-4 md:py-8 xl:py-20 md:px-8  xl:px-12'>
              <div className='flex flex-col gap-[8px] sm:items-center  md:items-start'>
@@ -21,7 +25,7 @@ function Home() {
       
     </div>
 
-<Footer/></div>
+</section><Footer/></>
   )
 }
 

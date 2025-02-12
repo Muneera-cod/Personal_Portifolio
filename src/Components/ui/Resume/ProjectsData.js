@@ -3,24 +3,50 @@ export const projectData = [
         id:1,
         title:'JavaScript Learning Platform',
         date:'',
-        description:'Developed a web app using React, Redux, and Firebase. Features include user authentication, a question roadmap with filtering, detailed question pages with a code editor, task completion tracking, and a profile page displaying progress. Engaging visuals like badges and stars were incorporated. An additional learning page includes a JavaScript compiler with an AI assistant. Admin features include a dashboard for user overview, user management, question management, and an admin login/profile page.',
-    },
-    {
-        id:2,
-        title:'ToDo list (using redux): ',
-        date:'',
-        description:'Developed a responsive and interactive to-do list application using React for the frontend and Redux.js for state management. Implemented CRUD functionality, allowing users to manage tasks efficiently. Utilized Redux for global state management to handle tasks, completed tasks, and application state across components. ',
-    },
-    {
-        id:3,
-        title:'Dental clinic management system',
-        date:'2024',
-        description:'A web Application developed as part of final year academic project. The main function of the system is approving the appointment placed by the patients and store their details, dentist details, and retrieve these details as and when required, also to manipulate these details meaningfully. The backend is built with Python Django and MySQL. Front end using Bootstrap, Html and CSS.',
-    },
-    {
-        id:4,
-        title:'E commerce website ',
-        date:'2023',
-        description:'A comprehensive and user-friendly e-commerce platform designed for a Cloth store to revolutionize the way customers  browse, select, and purchase clothing and accessories online. The backend is built with Python Django and MySQL. Front end using Bootstrap, Html and CSS.',
-    }
+        description:{
+            techstack:'REACT.JS, REDUX, RTK QUERY, FIREBASE, GEMINI AI, MANTINE UI, TAILWIND CSS',
+            topDescription: ' Developed an interactive JavaScript Learning Platform to help users learn JavaScript through structured questions,real- time coding, and AI-powered assistance'
+            ,
+            keyFeatures:[
+            'User authentication & role management (Student & Admin) using Firebase',
+            ' Interactive question roadmap with filters and progress tracking',
+                'Built-in JavaScript code editor for real-time execution',
+                'AI-powered assistant using Gemini API for learning support',
+               'Admin dashboard for managing users and questions '  ],
+      lastDesription:'Designed with responsive UI/UX principles to provide a smooth and engaging learning experience.'
+}
+}      
+,
+{
+    id:2,
+    title:'Todo App',
+    date:'',
+    description:{
+        techstack:'REACT.JS, REDUX,Tailwind CSS,SUPABASE,RTK QUERY',
+        topDescription:'Developed a personal task management app with a focus on user customization and task tracking.' 
+        ,
+        keyFeatures:[
+            'Integrated Supabase Postgres REST API for seamless CRUD operations on tasks, enabling users to add, edit,and delete tasks',
+            'Used RTK Query for optimized API data fetching, caching, and state management',
+            'Enabled authentication with Supabase Auth for secure user login and personalized task management']
+            ,
+        lastDesription:''
+}},
+{
+    id:3,
+    title:'Dental clinic management system',
+    date:'2024',
+     
+    description:{
+        techstack:'REACT.JS,Tailwind CSS',
+        topDescription:'Developed a fully responsive eCommerce UI, ensuring seamless performance across all devices' 
+        ,
+        keyFeatures:[
+        'Tailwind CSS for a clean, flexible, and consistent design',
+        'Responsive design for optimal viewing across desktop, tablet, and mobile devices'],
+        lastDesription:''
+}
+}      
+
+   
 ]

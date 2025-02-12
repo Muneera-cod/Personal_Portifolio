@@ -1,12 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
 *{
- box-sizing: border-box;
- font-family:monospace;
+  box-sizing: border-box;
+  margin: 0;
+  font-family:monospace;
+  @apply transition-colors duration-100 transition-all;
 }
 body{
-  background: #f3f3f3
+  background: #ffffff
 }
 h1{
     margin: 0;
@@ -78,16 +84,28 @@ header ul li{
        
     }
     .active{
-        color: #578E7E!important;
+        color: rgb(87, 142, 126)!important;
+    }
+    nav{
+      background: #ffffff;
+      border: 2px solid rgb(30, 30, 30 ,0.1);
+      font-size: large;
+      font-weight: 600;
+    }
+    nav .active{
+      background-color: rgb(87, 142, 126,0.2);
+    }
+    nav ul li{
+      list-style: none;
     }
     .headline::after{
         content: "";
         height: 2px;
         background-color: #578E7E ;
         position: absolute;
-         left: -5px;
-         bottom: -4px;
-        width: 110%;
+         left: 0;
+         bottom: 0;
+        width: 100%;
         transition: width 0.3s ease; 
   
     }

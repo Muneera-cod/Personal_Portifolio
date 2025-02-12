@@ -17,7 +17,7 @@ function Main() {
     else if(location.pathname==='/aboutme'){
       setView(1)
     }
-    else if(location.pathname==='/resume'){
+    else if(location.pathname==='/resume' || location.pathname==='/projects'){
       setView(1)
     }
   },[location.pathname])
@@ -25,10 +25,11 @@ function Main() {
   return (
     <>
      <Navbar setView={setView}/>
+     <main>
       {view===0 && <Home/>}
     {view===1 && <Outlet/>}
     {/* <ProjectDetails/>  */}
-     
+    </main>
      </>
    
   )
