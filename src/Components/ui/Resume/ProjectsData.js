@@ -13,8 +13,10 @@ export const projectData = [
                 'Built-in JavaScript code editor for real-time execution',
                 'AI-powered assistant using Gemini API for learning support',
                'Admin dashboard for managing users and questions '  ],
-      lastDesription:'Designed with responsive UI/UX principles to provide a smooth and engaging learning experience.'
-}
+      lastDesription:'Designed with responsive UI/UX principles to provide a smooth and engaging learning experience.',
+},
+link:'https://js-learning-platfrom.vercel.app/'
+
 }      
 ,
 {
@@ -30,11 +32,14 @@ export const projectData = [
             'Used RTK Query for optimized API data fetching, caching, and state management',
             'Enabled authentication with Supabase Auth for secure user login and personalized task management']
             ,
-        lastDesription:''
-}},
+        lastDesription:'',
+},
+link:'https://to-do-app-react-kappa.vercel.app/'
+
+},
 {
     id:3,
-    title:'Dental clinic management system',
+    title:'ECOMMERCE UI',
     date:'2024',
      
     description:{
@@ -44,8 +49,10 @@ export const projectData = [
         keyFeatures:[
         'Tailwind CSS for a clean, flexible, and consistent design',
         'Responsive design for optimal viewing across desktop, tablet, and mobile devices'],
-        lastDesription:''
-}
+        lastDesription:'',
+},
+link:'https://ecommerce-ui-two.vercel.app/'
+
 }      
 
    

@@ -23,7 +23,7 @@
    
 } */
 
-@media (max-width:600px) {
+@media (max-width:1000px) {
     .gridforresume{
         display: grid;
         grid-template-columns: repeat(3,1fr);

@@ -3,35 +3,51 @@ import styles from  "./Resume.module.css"
 import { projectData } from './ProjectsData'
 import { useDispatch } from 'react-redux'
 import { hideSmNav } from '../../../redux/Slice/Nav/ShowSlice'
+import { useNavigate } from 'react-router-dom'
 function Resume() {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   return (
     <section onClick={()=>dispatch(hideSmNav())} className={`max-h-[100%]  relative overflow-hidden text-[#3D3D3D]  pt-[120px] sm:pb-[30px] md:pb-[60px] sm:px-[20px] md:px-[30px] lg:px-[40px] ${styles.gridforresume}`}>
-      <div className={`sm:p-[20px] md:p-[30px] lg:p-[40px] shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-left ${styles.skills}`}>
+      <div className={`headline sm:p-[20px]  md:p-[25px] lg:p-[30px] xl:p-[35px] shadow-md  flex flex-col  gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-left ${styles.skills}`}>
         <div className=' relative h-fit w-fit'>
           
           <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase  headline tracking-wide'>Skills</p>
         
         </div>
-          <div className='flex flex-col gap-[0.5rem] sm:text-[15px] md:text-[17px]'>
-                  <p>React js</p>
-                  <p>TypeScript</p>
-                  <p>Javascript</p>
-                  <p>Responive Design</p>
-          </div>
+                  <div className='flex flex-col  max-h-fit mb-2   sm:text-[15px] md:text-[17px]'>
+                    <p className='font[700] opacity-90'>Programming Languages:</p>
+                    <p className='flex-1 font-[400] '>JavaScript,TypeScript,Python,C,Java,HTML,CSS.</p>
+
+                  </div>
+                  <div className='flex flex-col  max-h-fit mb-2   sm:text-[15px] md:text-[17px]'>
+                    <p className='font[700] opacity-90'>Libraries & Frameworks:</p>
+                    <p className='flex-1 font-[400] '> React.js, Mantine UI, Tailwind CSS,Redux, RTK Query, Express.js, REST APIs.</p>
+
+                  </div>
+                  <div className='flex flex-col  max-h-fit mb-2   sm:text-[15px] md:text-[17px]'>
+                    <p className='font[700] opacity-90'>Database & Backend Services:</p>
+                    <p className='flex-1 font-[400] '> Firebase,Supabase,MongoDB,MySQL.</p>
+
+                  </div>
+                  <div className='flex   max-h-fit mb-2   sm:text-[15px] md:text-[17px]'>
+                    <p className='font[700] opacity-90'>Version control:</p>
+                    <p className='flex-1 font-[400] '>Git</p>
+
+                  </div>
         </div>
-        <div className={`sm:p-[20px] md:p-[30px]  lg:p-[36px] shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right ${styles.about}`}>
+        <div className={`headline  sm:p-[20px]  md:p-[25px] lg:p-[30px] xl:p-[35px] shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right ${styles.about}`}>
         <div className=' relative h-fit w-fit'>
           
           <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase headline tracking-wide'>Software Developer</p>
           
         </div>
-        <div className='max-w-[600px] text-justify'> <p className='sm:text-[15px] md:text-[17px] '>Passionate about crafting engaging and responsive user interfaces. Proficient in HTML, CSS, JavaScript, React.js, and 
+        <div className=' text-justify'> <p className='sm:text-[15px] md:text-[17px] '>Passionate about crafting engaging and responsive user interfaces. Proficient in HTML, CSS, JavaScript, React.js, and 
 responsive design principles. Seeking to join an innovative team to leverage my skills in UI design and front-end 
 development, enhancing user experiences across devices. </p></div>
         </div>
 
-        <div className={`sm:p-[25px] md:p-[30px] lg:p-[40px] shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right  ${styles.experience}`}>
+        <div className={`headline sm:p-[20px]  md:p-[25px] lg:p-[30px] xl:p-[35px]shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right  ${styles.experience}`}>
         <div className=' relative h-fit w-fit'>
           
           <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase  headline tracking-wide'>Experience</p>
@@ -42,13 +58,13 @@ development, enhancing user experiences across devices. </p></div>
         </div>
         </div>
 
-        <div className={`sm:p-[20px] md:p-[30px] lg:p-[40px] shadow-md flex flex-col gap-[1.5rem] bg-[rgb(3,111,113,0.1)] slide-in-bottom  ${styles.projects}`}>
+        <div className={`headline sm:p-[20px]  md:p-[25px] lg:p-[30px] xl:p-[35px] shadow-md flex flex-col gap-[1.5rem] bg-[rgb(3,111,113,0.1)] slide-in-bottom  ${styles.projects}`}>
         <div className=' relative h-fit w-fit'>
           
           <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase  headline tracking-wide'>Projects</p>
           
         </div>
-        {projectData.map((project)=><div  key={project.id} className='border-b-[0.5px] pb-2 border-textColor border-opacity-20 flex flex-col gap-2 sm:text-[15px] md:text-[17px]'>
+        {projectData.map((project,index)=><div  key={project.id} className={`${index !== projectData.length-1 ? 'border-b-[0.5px]' : ''} pb-2 border-textColor border-opacity-20 flex flex-col gap-2 sm:text-[15px] md:text-[17px]`}>
           <div className='flex justify-between items-center '>
             <p className='font-[700] tracking-widest'>{project.title}</p>
               <p className='opacity-60'>{project.date}</p>
@@ -63,7 +79,7 @@ development, enhancing user experiences across devices. </p></div>
           </ul>
           <p className='text-justify'>{project.description.lastDesription}</p>
 
-          <button className='my-3 font-[900] px-5  py-1 bg-hoverNavClr bg-opacity-10 rounded-md'>Preview</button>
+          <button  onClick={()=>window.open(project.link, '_blank')} className='my-3 font-[900] px-5  py-1 bg-hoverNavClr bg-opacity-10 rounded-md'>Preview</button>
           </div>
            
         </div>)}

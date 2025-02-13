@@ -25,11 +25,10 @@ function Main() {
   return (
     <>
      <Navbar setView={setView}/>
-     <main>
+     
       {view===0 && <Home/>}
     {view===1 && <Outlet/>}
     {/* <ProjectDetails/>  */}
-    </main>
      </>
    
   )
