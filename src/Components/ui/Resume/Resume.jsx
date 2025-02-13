@@ -42,9 +42,11 @@ function Resume() {
           <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase headline tracking-wide'>Software Developer</p>
           
         </div>
-        <div className=' text-justify'> <p className='sm:text-[15px] md:text-[17px] '>Passionate about crafting engaging and responsive user interfaces. Proficient in HTML, CSS, JavaScript, React.js, and 
-responsive design principles. Seeking to join an innovative team to leverage my skills in UI design and front-end 
-development, enhancing user experiences across devices. </p></div>
+        <div className=' text-justify'> <p className='sm:text-[15px] md:text-[17px] '>I am a dedicated Software Developer with a strong foundation in React.js, JavaScript, and responsive design. I enjoy 
+creating dynamic, user-focused web applications and am always excited to tackle new challenges. With experience in 
+state management using Redux and RTK Query, as well as backend solutions like Firebase and Supabase, I strive to 
+deliver clean, functional, and visually appealing code. Constantly learning and evolving, I’m passionate about building 
+solutions that enhance user experiences and streamline processes. </p></div>
         </div>
 
         <div className={`headline sm:p-[20px]  md:p-[25px] lg:p-[30px] xl:p-[35px]shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right  ${styles.experience}`}>
