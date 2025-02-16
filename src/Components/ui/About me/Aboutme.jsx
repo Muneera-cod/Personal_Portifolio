@@ -8,13 +8,15 @@ import tailwindicon from '../../../assets/Images/icons8-tailwind-css.svg'
 import reacticon from '../../../assets/Images/icons8-react-js.svg'
 import typeScripticon from '../../../assets/Images/icons8-typescript.svg'
 import reduxicon from '../../../assets/Images/icons8-redux.svg'
-import { useDispatch } from 'react-redux'
-import { hideSmNav } from '../../../redux/Slice/Nav/ShowSlice'
+// import { useDispatch } from 'react-redux'
+// import { hideSmNav } from '../../../redux/Slice/Nav/ShowSlice'
 function Aboutme() {
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
   
   return (
-    <section onClick={()=>dispatch(hideSmNav())} className='flex  min-h-screen relative overflow-hidden sm:flex-col md:flex-row items-center   w-full   sm:px-[14px] md:px-[20px] lg:px-[28px] xl:px-[45px] pt-[100px] pb-10'>
+    <section 
+    // onClick={()=>dispatch(hideSmNav())}
+     className='flex  min-h-screen relative overflow-hidden sm:flex-col md:flex-row items-center   w-full   sm:px-[14px] md:px-[20px] lg:px-[28px] xl:px-[45px] pt-[100px] pb-10'>
       
            
            <div className='flex  m-auto flex   items-center justify-center sm:h-3/4 md:h-full sm:w-3/4   md:w-[400px]   overflow-hidden'>

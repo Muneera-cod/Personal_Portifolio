@@ -1,14 +1,16 @@
 import React from 'react'
 import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-import { hideSmNav } from '../../../redux/Slice/Nav/ShowSlice'
+// import { useDispatch } from 'react-redux'
+// import { hideSmNav } from '../../../redux/Slice/Nav/ShowSlice'
 import Picture from './Picture.jsx'
 function Home() {
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
   return (
    <>
-   <section onClick={()=>dispatch(hideSmNav())} className='h-[calc(100vh-60px)] flex sm:flex-col-reverse md:flex-row  md:items-center  md:justify-around w-11/12 m-auto md:pt-[4rem] lg:gap-[40px] '>
+   <section
+    // onClick={()=>dispatch(hideSmNav())} 
+   className='h-[calc(100vh-60px)] flex sm:flex-col-reverse md:flex-row  md:items-center  md:justify-around w-11/12 m-auto md:pt-[4rem] lg:gap-[40px] '>
         <div className='basis-1/2 flex flex-col  sm:items-center  md:items-start  justify-center  gap-[30px] sm:py-4 md:py-8 xl:py-20 md:px-8  xl:px-12'>
              <div className='flex flex-col gap-[8px] sm:items-center  md:items-start'>
                 <h1 className='sm:text-[30px] md:text-[38px] lg:text-[44px] text-[#3D3D3D] leading-[72px] font-[700] typing-container'>Hi, I'm Muneera</h1>

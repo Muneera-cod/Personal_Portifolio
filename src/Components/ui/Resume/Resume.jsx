@@ -1,15 +1,16 @@
 import React from 'react'
 import styles from  "./Resume.module.css"
 import { projectData } from './ProjectsData'
-import { useDispatch } from 'react-redux'
-import { hideSmNav } from '../../../redux/Slice/Nav/ShowSlice'
-import { useNavigate } from 'react-router-dom'
+// import { useDispatch } from 'react-redux'
+// import { hideSmNav } from '../../../redux/Slice/Nav/ShowSlice'
+// import { useNavigate } from 'react-router-dom'
 function Resume() {
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  
   return (
     <>
-    <section onClick={()=>dispatch(hideSmNav())} className={`max-h-[100%] w-full  relative overflow-hidden text-[#3D3D3D]  pt-[120px] sm:pb-[30px] md:pb-[60px] sm:px-[20px] md:px-[30px] lg:px-[40px] ${styles.gridforresume}`}>
+    <section 
+    // onClick={()=>dispatch(hideSmNav())} 
+    className={`max-h-[100%] w-full  relative overflow-hidden text-[#3D3D3D]  pt-[120px] sm:pb-[30px] md:pb-[60px] sm:px-[20px] md:px-[30px] lg:px-[40px] ${styles.gridforresume}`}>
       <div className={`headline sm:p-[20px]  md:p-[25px] lg:p-[30px] xl:p-[35px] shadow-md  flex flex-col  gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-left ${styles.skills}`}>
         <div className=' relative h-fit w-fit'>
           

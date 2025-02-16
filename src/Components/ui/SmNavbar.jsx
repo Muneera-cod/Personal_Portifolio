@@ -1,8 +1,11 @@
 import { NavLink } from 'react-router-dom'
-
+import { useDispatch } from 'react-redux';
+import { hideSmNav } from '../../redux/Slice/Nav/ShowSlice';
 function SmNavbar() {
+  const dispatch = useDispatch()
+
   return (
-    <nav className="sm:flex md:hidden rounded-md top-16 fixed left-[50%] -translate-x-1/2 z-20 shadow-lg py-12  w-11/12 h-fit bg-red-200 gap-2  flex-col">
+    <nav onClick={()=>dispatch(hideSmNav())} className="sm:flex md:hidden rounded-md top-16 fixed left-[50%] -translate-x-1/2 z-20 shadow-lg py-12  w-11/12 h-fit bg-red-200 gap-2  flex-col">
         <ul>
         <NavLink to={'/'}>
     {({ isActive, isPending }) => {
