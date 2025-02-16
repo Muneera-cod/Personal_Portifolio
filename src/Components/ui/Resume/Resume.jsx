@@ -8,33 +8,36 @@ function Resume() {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   return (
-    <section onClick={()=>dispatch(hideSmNav())} className={`max-h-[100%]  relative overflow-hidden text-[#3D3D3D]  pt-[120px] sm:pb-[30px] md:pb-[60px] sm:px-[20px] md:px-[30px] lg:px-[40px] ${styles.gridforresume}`}>
+    <>
+    <section onClick={()=>dispatch(hideSmNav())} className={`max-h-[100%] w-full  relative overflow-hidden text-[#3D3D3D]  pt-[120px] sm:pb-[30px] md:pb-[60px] sm:px-[20px] md:px-[30px] lg:px-[40px] ${styles.gridforresume}`}>
       <div className={`headline sm:p-[20px]  md:p-[25px] lg:p-[30px] xl:p-[35px] shadow-md  flex flex-col  gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-left ${styles.skills}`}>
         <div className=' relative h-fit w-fit'>
           
           <p className='sm:text-[18px] md:text-[25px] font-[700]   uppercase  headline tracking-wide'>Skills</p>
         
         </div>
-                  <div className='flex flex-col  max-h-fit mb-2   sm:text-[15px] md:text-[17px]'>
-                    <p className='font[700] opacity-90'>Programming Languages:</p>
-                    <p className='flex-1 font-[400] '>JavaScript,TypeScript,Python,C,Java,HTML,CSS.</p>
+        <div>
+                  <div className='flex flex-wrap  mb-2   sm:text-[15px] md:text-[17px]'>
+                    <p className='font-[700] opacity-90'>Programming Languages:</p>
+                    <p className=' font-[400]'>JavaScript ,TypeScript ,Python ,C ,Java ,HTML ,CSS.</p>
 
                   </div>
-                  <div className='flex flex-col  max-h-fit mb-2   sm:text-[15px] md:text-[17px]'>
-                    <p className='font[700] opacity-90'>Libraries & Frameworks:</p>
-                    <p className='flex-1 font-[400] '> React.js, Mantine UI, Tailwind CSS,Redux, RTK Query, Express.js, REST APIs.</p>
+                  <div className='flex flex-wrap  mb-2   sm:text-[15px] md:text-[17px]'>
+                    <p className='font-[700] opacity-90'>Libraries & Frameworks:</p>
+                    <p className=' font-[400] '> React.js,Mantine UI,Tailwind CSS,Redux,RTK Query,Express.js,REST APIs.</p>
 
                   </div>
-                  <div className='flex flex-col  max-h-fit mb-2   sm:text-[15px] md:text-[17px]'>
-                    <p className='font[700] opacity-90'>Database & Backend Services:</p>
-                    <p className='flex-1 font-[400] '> Firebase,Supabase,MongoDB,MySQL.</p>
+                  <div className='flex flex-wrap   mb-2   sm:text-[15px] md:text-[17px]'>
+                    <p className='font-[700] opacity-90'>Database & Backend Services:</p>
+                    <p className='font-[400] '> Firebase, Supabase ,MongoDB ,MySQL.</p>
 
                   </div>
-                  <div className='flex   max-h-fit mb-2   sm:text-[15px] md:text-[17px]'>
-                    <p className='font[700] opacity-90'>Version control:</p>
+                  <div className='flex  flex-wrap  mb-2   sm:text-[15px] md:text-[17px]'>
+                    <p className='font-[700] opacity-90'>Version control:</p>
                     <p className='flex-1 font-[400] '>Git</p>
 
                   </div>
+            </div>      
         </div>
         <div className={`headline  sm:p-[20px]  md:p-[25px] lg:p-[30px] xl:p-[35px] shadow-md flex flex-col gap-[1rem] bg-[rgb(3,111,113,0.1)] slide-in-right ${styles.about}`}>
         <div className=' relative h-fit w-fit'>
@@ -87,8 +90,13 @@ solutions that enhance user experiences and streamline processes. </p></div>
         </div>)}
         </div>
 
+<div className={`${styles.btn}`}>
+<button className=' text-hoverNavClr hover:text-[#578E7E] border-[0.1px] border-[rgb(255, 255, 255)] px-[20px] py-[5px]  hover:bg-[#323232] hover:opacity-100 bg-hoverNavClr bg-opacity-20     rounded-md sm:text-[16px] md:text-[20px] font-[400]' ><a href='/CV.pdf' download="Muneera_Resume.pdf">Download Resume</a></button>
 
+</div>
     </section>
+
+    </>
   )
 }
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="172" height="167">
+
+<defs>
+    <clipPath  id="1">
+
+    <path id=""  clip-rule="evenodd" transform="matrix(1 0 0 1 0 0)"  d="M0 125L0 -0.25L0 -0.25L129.75 -0.25L129.75 -0.25L129.75 125L129.75 125L0 125z" />    </clipPath>
+    <pattern patternTransform="matrix(1 -0 0 1 0 0.25)"  id="195" x="0" y="0" width="130" height="125" patternUnits="userSpaceOnUse">
+    <image  x="0" y="0" width="130" height="125" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAAB9CAYAAABux7sxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAEDSURBVHhe7dIBDQAwEMSg+Td9+1QHaOANjghEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGIQEQgIhARiAhEBCICEYGzfXj9+N248LOIAAAAAElFTkSuQmCC"/>
+    </pattern>
+</defs>
+
+<g transform="matrix(1.3333 0 0 1.3333 0 0)">
+	<g clip-path="url(#1)" >
+    <path id=""  transform="matrix(1 0 0 -1 0 125)"  d="M0 125.25L0 125.25L0 125.25L129.75 125.25L129.75 125.25L129.75 0L129.75 0L0 0z" stroke="none" fill="#1E1E1E" fill-rule="nonzero" />
+    <path id=""  transform="matrix(1 0 0 -1 0 125)"  d="M0 125.25L0 125.25L0 125.25L129.75 125.25L129.75 125.25L129.75 0L129.75 0L0 0z" stroke="none" fill="url(#195)" />
+	</g>
+</g>
+</svg>

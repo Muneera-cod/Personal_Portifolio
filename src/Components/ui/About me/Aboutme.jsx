@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../../../assets/Images/about-removebg.png'
+import photo from '../../../assets/Images/about_me.svg'
 import htmicon from '../../../assets/Images/icons8-html.svg'
 import cssicon from '../../../assets/Images/icons8-css.svg'
 import giticon from '../../../assets/Images/icons8-git.svg'
@@ -17,7 +17,7 @@ function Aboutme() {
     <section onClick={()=>dispatch(hideSmNav())} className='flex  min-h-screen relative overflow-hidden sm:flex-col md:flex-row items-center   w-full   sm:px-[14px] md:px-[20px] lg:px-[28px] xl:px-[45px] pt-[100px] pb-10'>
       
            
-           <div className='flex  m-auto flex   items-center justify-center max-w-[400px] max-h-[400px] min-h-[300px]   overflow-hidden'>
+           <div className='flex  m-auto flex   items-center justify-center sm:h-3/4 md:h-full sm:w-3/4   md:w-[400px]   overflow-hidden'>
               <img src={photo}  className='w-full h-full object-cover '></img>
           </div>
         <div className='basis-1/2 flex   justify-start  flex-col  bg-red-300 gap-4  md:p-6 slide-in-right'>

@@ -3,13 +3,21 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-areas: "skills about about"
                           "skills experience experience"
-                          "projects projects projects";
+                          "projects projects projects"
+                          "btn btn btn";
+
     gap: 1rem;
     margin: auto;
 }
 .skills{
     grid-area: skills;
 }
+/* .skills > div:last-child {
+}
+.skills > div:last-child > div p:last-child{
+ 
+
+} */
 .about{
     grid-area: about;
 }
@@ -18,6 +26,10 @@
 }
 .projects{
   grid-area: projects;
+}
+.btn{
+    grid-area: btn;
+    margin-left: auto;
 }
 /* @media (min-width:800px) {
    
@@ -30,7 +42,9 @@
         grid-template-areas: "about about about"
                               "skills skills skills"
                               "experience experience experience"
-                              "projects projects projects";
+                              "projects projects projects"
+                               "btn btn btn";
+
         gap: 1rem;
     }
 }
