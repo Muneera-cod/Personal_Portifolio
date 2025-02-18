@@ -81,7 +81,7 @@ solutions that enhance user experiences and streamline processes. </p></div>
           <p className='text-justify'>{project.description.topDescription}</p>
           <ul className='sm:pl-8 lg:pl-12 py-3'>
             <li className='sm:-ml-8 lg:-ml-12'>Key Features</li>
-            {project.description.keyFeatures.map((feature)=><li className='list-disc'>{feature}</li>)}
+            {project.description.keyFeatures.map((feature,index)=><li key={index} className='list-disc'>{feature}</li>)}
           </ul>
           <p className='text-justify'>{project.description.lastDesription}</p>
 
