@@ -11,6 +11,9 @@
   font-family:monospace;
   @apply transition-colors duration-100 transition-all;
 }
+
+
+
 .dark{
   background-color: #2a2929;
   color: #ffffff;

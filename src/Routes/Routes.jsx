@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-// import  Main from "../Components/Pages/Main"
 import { lazy } from "react";
 import { Suspense } from "react";
 const Main=lazy(()=>import ( "../Components/Pages/Main")) ;
@@ -8,6 +7,7 @@ import Resume from "../Components/ui/Resume/Resume";
 
 import Loading from "../Components/ui/Loading";
 import ProjectDetails from "../Components/ui/Projects/ProjectDetails";
+
 export const router=createBrowserRouter(
     [
         {
