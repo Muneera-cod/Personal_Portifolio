@@ -287,7 +287,7 @@ function Picture(props) {
       fill={'#3D3D3D'}
     />
   </g> */}
- <g id="hair" transform="translate(260, -30) scale(-1.002, 1.1) ">
+ <g id="hair" transform="translate(260, -30)  scale(-1.002, 1.15) ">
   <g id="g80">
     <path
       id="path78"
